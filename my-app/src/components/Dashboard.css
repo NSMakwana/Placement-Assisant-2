@@ -1,0 +1,268 @@
+body {
+  margin: 0; /* Remove default body margin */
+  font-family: Arial, sans-serif; /* Set a default font */
+  height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+  display: flex; /* Use flexbox for layout */
+  height: 100vh; /* Full height */
+}
+
+.content {
+  flex: 1; /* Take the remaining space */
+  background-color: white; /* Light background for content area */
+  padding: 2px; /* Padding around the content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for the content area */
+  border-radius: 2px; /* Rounded corners */
+  border: solid#4fb9af;
+  margin: 20px; /* Margin around the box */
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  justify-content: flex-start; /* Start from the top */
+}
+
+.header {
+  background-color: #4fb9af; /* Green background for the header */
+  color: black; /* White text color */
+  padding: 0.50px; /* Padding inside the header */
+  height: 10%; /* Height covering 30% of the content area */
+  text-align: center; /* Centered text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for the header */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 4px; /* Space between header and content */
+  font-size: 20px;
+}
+
+.sidebar {
+  width: 15%; /* Sidebar takes 20% of the width */
+  background-color:white; /* Dark background for the sidebar */
+  color: black; /* White text color */
+  padding: 20px; /* Padding inside the sidebar */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow on the right edge */
+  height: 100%; /* Full height */
+  border-radius: 2px; /* Rounded corners */
+  border: solid#4fb9af;
+}
+
+.sidebar h2 {
+  margin-bottom: 50px; /* Space below the title */
+}
+
+ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 10px; /* Remove padding */
+}
+
+li {
+  padding: 10px; /* Padding for each tab */
+  margin-bottom: 15px; /* Space between tabs */
+  position: relative; /* For absolute positioning of bullets */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+li:hover {
+  background-color:#4fb9af; /* Change background on hover */
+}
+
+li::before {
+  content: ''; /* Create a pseudo-element for the bullet */
+  display: block; /* Make it a block element */
+  width: 25px; /* Width of the image bullet */
+  height: 30px; /* Height of the image bullet */
+  background-image: url('C:\Users\maitr\my-app\src\components\bullets.jpg'); /* Path to your image */
+  background-size: contain; /* Resize image to fit */
+  background-repeat: no-repeat; /* Prevent repetition */
+  position: absolute; /* Position it relative to the list item */
+  left: -20px; /* Position to the left of the list item */
+  right: -20px;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust position to align */
+}
+
+.shadow-box {
+  background-color: white; /* White background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  border-radius: 5px; /* Rounded corners */
+  margin: 1px; /* Margin around the box */
+  height: auto; /* Adjust to content height */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  padding: 10px; /* Padding inside the shadow box */
+}
+
+.bullet-list {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.bullet-list li {
+  position: relative; /* For pseudo-elements */
+  padding-left: 25px; /* Space for custom bullet */
+  margin-bottom: 10px; /* Space between items */
+}
+
+.bullet-list li::before {
+  content: '•'; /* Standard bullet */
+  position: absolute;
+  left: 0; /* Position left */
+  color: #4fb9af; /* Color for the bullet */
+  font-size: 1.2em; /* Adjust bullet size if needed */
+}
+
+.dropdown-arrow {
+  margin-left: 10px; /* Space between text and arrow */
+  color: #4fb9af; /* Color for the arrow */
+}
+
+.dropdown {
+  margin-left: 5px; /* Space between arrow and dropdown */
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 15%;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  border-radius: 2px;
+  border: solid #4fb9af;
+}
+
+.sidebar h2 {
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+}
+
+li {
+  padding: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #4fb9af;
+}
+
+.content {
+  flex: 1;
+  background-color: white;
+  padding: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  border: solid #4fb9af;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.header {
+  background-color: #4fb9af;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 4px;
+  font-size: 20px;
+}
+
+.shadow-box {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 1px;
+  padding: 10px;
+}
+
+.filter-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.filter-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #4fb9af;
+}
+
+.student-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.student-list th, .student-list td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.filter-section {
+  
+  gap: 50px; /* Adjust this value to control the distance between items */
+  margin-bottom: 10px; /* Space below the filter section */
+}
+
+.filter-section select,
+.filter-section input,
+.filter-section label {
+  margin-right: 20px; /* Optional: Adjust this for finer control */
+}
+
+.filter-item {
+  flex-direction: column;
+  margin-right: 10px; /* Adjust spacing between each filter item */
+}
+
+* Styling for the main content box from Batch filter to Student List */
+.content-box {
+  border: 1px solid #ddd; /* Border around the content box */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  margin-top: 20px; /* Space between the top elements and the box */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.filter-section, .filter-options, .student-list {
+  margin-bottom: 15px; /* Space between sections */
+}
+
+.student-list table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-list th, .student-list td {
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ 
+
