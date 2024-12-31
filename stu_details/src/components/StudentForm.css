@@ -1,0 +1,49 @@
+/* Center the form */
+.form-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.form-container .bg-gradient {
+    background: linear-gradient(#5F9EA0);
+    background: linear-gradient(#5F9EA0) !important;
+}
+
+/* Card styling */
+.bg-gradient {
+    .bg-gradient {
+        background: #5F9EA0; /* Fallback solid color */
+        background: linear-gradient(to right, #5F9EA0, #20B2AA) !important;
+        border-radius: 10px;
+    }
+    
+}
+
+/* Section header styling */
+.section-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:rgb(0, 206, 209);
+    margin-bottom: 1px;
+}
+
+/* Form field styling */
+.form-field {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background: #A9A9A9;
+    color: white;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background: black;
+    cursor: pointer;
+}

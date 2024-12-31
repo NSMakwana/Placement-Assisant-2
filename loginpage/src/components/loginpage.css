@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .card {
+    background: #ffffff;
+    border: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    border: none;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .card h3 {
+    font-weight: bold;
+  }
+  

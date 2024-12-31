@@ -1,0 +1,24 @@
+/* Set background color for the entire form container */
+.form-container {
+    background-color: #f0f8ff;  /* Light blue background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Set background color for form inputs */
+  .form-control {
+    background-color: #ffffff;  /* White background for inputs */
+  }
+  
+  /* Add a subtle color to the submit button */
+  .btn-primary {
+    background-color: #007bff;  /* Blue background */
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+    border-color: #0056b3;
+  }
+  
